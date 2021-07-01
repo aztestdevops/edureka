@@ -1,0 +1,16 @@
+Start Jenkins using security key-
+
+/var/lib/jenkins/secrets/initialAdminPassword
+chmod -R 775 secrets
+
+Check logs for Jenkins job-
+
+cd /var/lib/jenkins/workspace
+cd job1
+cd /tmp
+ls -l
+
+Global Configuration tool-
+Add JDK - echo $JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
+Add Maven - echo $MAVEN_HOME /opt/apache-maven-3.8.1
+
