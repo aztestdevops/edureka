@@ -1,5 +1,18 @@
 Start Jenkins using security key-
 
+To know the status of Jenkins:
+
+sudo service jenkins status
+To start the Jenkins:
+
+sudo service jenkins start
+To stop the Jenkins:
+
+sudo service jenkins stop
+To restart the Jenkins:
+
+sudo service jenkins restart
+
 /var/lib/jenkins/secrets/initialAdminPassword
 chmod -R 775 secrets
 
@@ -20,3 +33,4 @@ Build Maven - mvn build
 Compile Maven - mvn compile 
 Test Maven - mvn test
 
+Maven file location - /opt/apache-maven-3.8.1/conf (settings.xml)
