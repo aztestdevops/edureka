@@ -14,3 +14,9 @@ Global Configuration tool-
 Add JDK - echo $JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 Add Maven - echo $MAVEN_HOME /opt/apache-maven-3.8.1
 
+Install Maven - apt install maven
+Validate Maven - mvn validate
+Build Maven - mvn build
+Compile Maven - mvn compile 
+Test Maven - mvn test
+
