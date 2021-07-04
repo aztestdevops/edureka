@@ -1,3 +1,17 @@
+Setup Jenkins:-
+sed -i -e 's/\r$//'  setup-Jenkins.sh
+./setup-Jenkins.sh
+(Error:- Bash script and /bin/bash^M: bad interpreter: No such file or directory)
+
+Check Env variables are set:-
+source /etc/profile
+
+Check Java Home is working - echo $JAVA_HOME
+Check Maven Home is working - echo $MAVEN_HOME
+
+Check default location for Jenkins - cd /var/lib/jenkins/
+Check Jenkins process - ps -ef|grep jenkins
+
 Start Jenkins using security key-
 
 To know the status of Jenkins:
