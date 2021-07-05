@@ -54,6 +54,8 @@ Warning Next Generation, Cobertura, BuildPipeline Plugins added
 
 Configure Slave Node in Jenkins - 
 *******************************
-Steps:-
+Install Java, Maven
+Manage Jenkins -> Systems Config -> Manage Nodes and Clouds -> New Node -> Select Agent -> Save workspace -> Launch method (Launch agent via SSH), add hostname, add credentials, Node Properties -> Tool Location
+On VM (workspace path) -> create a new working directory -> mkdir slavedata
+Configure Job -> [General] -> Restrict where project can run -> Check label
 
-Install Java and Maven
