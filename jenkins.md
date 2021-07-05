@@ -49,6 +49,11 @@ Test Maven - mvn test
 
 Maven file location - /opt/apache-maven-3.8.1/conf (settings.xml)
 
-
 PMD plugin - To do code analysis for maven project
 Warning Next Generation, Cobertura, BuildPipeline Plugins added
+
+Configure Slave Node in Jenkins - 
+*******************************
+Steps:-
+
+Install Java and Maven
