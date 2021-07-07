@@ -8,3 +8,45 @@ ssh-copy-id 52.168.48.44
 ansible --version
 
 cd /etc/ansible  -- change host file
+
+# uncomment this to disable SSH key host checking (Change in config file)
+host_key_checking = False
+
+Check connectivity
+******************
+ansible all -m ping (with user configured ssh key)
+ansible all -m ping -u aman -k
+
+Error - "msg": "to use the 'ssh' connection type with passwords, you must install the sshpass program"
+apt-get install sshpass
+
+Customize ansible host
+**********************
+
+root@AZ-VM001:~# mkdir amanworks
+root@AZ-VM001:~# cd amanworks/
+root@AZ-VM001:~/amanworks# vi amaninventory
+root@AZ-VM001:~/amanworks# vi amaninventory
+root@AZ-VM001:~/amanworks# rm /etc/ansible/hosts
+root@AZ-VM001:~/amanworks# ansible all -m ping -u aman -k
+SSH password:
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+root@AZ-VM001:~/amanworks# ansible all -i amaninventory  -m ping -u aman -k
+SSH password:
+52.168.48.44 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+40.76.26.4 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+
+
+
