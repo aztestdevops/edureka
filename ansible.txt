@@ -1,0 +1,10 @@
+ssh-keygen -- Generate key
+
+Copy Key
+
+ssh-copy-id 40.76.26.4
+ssh-copy-id 52.168.48.44
+
+ansible --version
+
+cd /etc/ansible  -- change host file
