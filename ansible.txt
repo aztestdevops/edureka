@@ -48,5 +48,10 @@ SSH password:
     "changed": false,
     "ping": "pong"
 
+To limit the test:-
+******************
+
+root@AZ-VM001:~/amanworks# ansible all -m ping -l 52.168.48.44
+
 
 
